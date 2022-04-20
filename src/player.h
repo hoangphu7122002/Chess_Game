@@ -14,7 +14,6 @@ public:
     Player(Person per, bool whiteSide);
     Player(){};
     
-    
     Person getPerson();
     bool isWhiteUser();
 };

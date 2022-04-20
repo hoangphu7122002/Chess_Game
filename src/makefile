@@ -1,10 +1,10 @@
 OPT = -Wall
-OBJS = main.o piece.o box.o board.o person.o player.o move.o
+OBJS = main.o game.o piece.o box.o board.o person.o player.o move.o
 
 all: main
 
 main: $(OBJS)
-	gcc $(OPT) -o main $(OBJS) 
+	g++ $(OPT) -o main $(OBJS) 
 
 main.o: main.cpp
 	gcc $(OPT) -c main.cpp -std=c++11
@@ -26,6 +26,9 @@ player.o: player.cpp player.h
 
 move.o: move.cpp move.h
 	gcc $(OPT) -c move.cpp -std=c++11
+
+game.o: game.cpp game.h
+	gcc $(OPT) -c game.cpp -std=c++11
 
 clean:
 	rm -f $(OBJS) main

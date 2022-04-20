@@ -6,6 +6,7 @@
 #include "player.h"
 #include "person.h"
 #include "piece.h"
+#include "game.h"
 #include <iostream>
 #include <vector>
 

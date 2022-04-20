@@ -21,7 +21,9 @@ public:
         this->type = type;
     }
     
-    ~Piece();
+    ~Piece(){
+    
+    };
     
     PieceType getType(){
         return this->type;
@@ -33,6 +35,10 @@ public:
     
     bool isKilled(){
         return this->killed;
+    }
+    
+    void setKilled(bool flag){
+        this->killed = flag;
     }
     
     virtual bool canMove(Board board, Box start, Box end) = 0;

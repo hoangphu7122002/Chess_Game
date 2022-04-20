@@ -18,4 +18,12 @@ enum class GameType {
     NONE
 };
 
+enum class StatusGame {
+    ACTIVE,
+    WHITE_WIN,
+    BLACK_WIN,
+    DRAW,
+    RESIGNED
+};
+
 #endif
